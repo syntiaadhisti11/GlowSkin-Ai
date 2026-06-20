@@ -33,7 +33,7 @@
 
 ## 🛠️ Teknologi
 
-**Backend** — FastAPI · LangGraph · LangSmith · Ollama (Qwen2.5-VL)
+**Backend** — FastAPI · LangGraph · LangSmith · Langchain · Ollama (Qwen2.5-VL)
 
 **Frontend** — React · TypeScript · Vite
 
