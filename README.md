@@ -1,4 +1,4 @@
-<img width="1600" height="751" alt="WhatsApp Image 2026-06-20 at 15 01 28" src="https://github.com/user-attachments/assets/0819b8a4-b899-4efb-94b9-d77a32096178" />
+
 ```
   ✦ G L O W S K I N   A I ✦
 ```
