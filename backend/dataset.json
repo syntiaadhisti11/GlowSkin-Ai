@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "name": "GlowSkin AI Reference Dataset",
+    "sources": [
+      "EWG Skin Deep Cosmetics Database",
+      "CosIng - European Commission Cosmetic Ingredient Database",
+      "PubChem (NIH) Chemical & Safety Profiles",
+      "CIR (Cosmetic Ingredient Review) Safety Reports"
+    ],
+    "description": "Dataset komprehensif berisi bahan aktif kosmetik, kecocokan kulit, tingkat bahaya/keamanan (EWG scale), interaksi bahan aktif, produk referensi, dan tips perawatan kulit."
+  },
+  "ingredients": [
+    {
+      "name": "Retinol",
+      "aliases": ["Vitamin A", "Retinyl Palmitate"],
+      "description": "Bahan turunan Vitamin A yang mempercepat regenerasi sel kulit, merangsang produksi kolagen, dan menyamarkan garis halus serta hiperpigmentasi.",
+      "benefits": ["Anti-aging", "Menyamarkan kerutan", "Regenerasi kulit", "Memperbaiki tekstur kulit"],
+      "risk_rating": 9,
+      "risk_category": "High Hazard",
+      "safety_details": "Berisiko tinggi memicu iritasi, kemerahan, dan kulit kering jika digunakan pada konsentrasi tinggi. Dilarang bagi wanita hamil atau menyusui karena risiko teratogenik.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Caution",
+        "sensitive": "Avoid",
+        "acne_prone": "Good"
+      },
+      "interactions": {
+        "Vitamin C (L-Ascorbic Acid)": "Avoid - Dapat memicu iritasi parah dan menetralkan efektivitas masing-masing karena perbedaan pH optimal. Gunakan Vitamin C di pagi hari dan Retinol di malam hari.",
+        "Salicylic Acid (BHA)": "Avoid - Kombinasi ini sangat mengikis skin barrier dan menyebabkan kekeringan serta iritasi ekstrem.",
+        "Glycolic Acid (AHA)": "Avoid - Keduanya bersifat mengelupas kulit, menggunakannya bersamaan dapat merusak skin barrier secara instan.",
+        "Niacinamide": "Excellent - Niacinamide membantu memperkuat skin barrier dan mengurangi efek iritasi/kering dari Retinol. Sangat disarankan dipakai bersama.",
+        "Ceramides": "Excellent - Membantu memulihkan kelembapan kulit yang hilang akibat efek pengeringan Retinol."
+      },
+      "tips": "Hanya gunakan pada malam hari. Mulai dari konsentrasi rendah (0.1% - 0.2%) sebanyak 1-2 kali seminggu. Wajib menggunakan sunscreen minimal SPF 30 pada pagi hari karena Retinol meningkatkan sensitivitas kulit terhadap sinar UV."
+    },
+    {
+      "name": "Salicylic Acid",
+      "aliases": ["BHA", "Beta Hydroxy Acid"],
+      "description": "Asam yang larut dalam minyak (lipid-soluble) sehingga mampu berpenetrasi ke dalam pori-pori untuk membersihkan sumbatan sebum, sel kulit mati, dan bakteri penyebab jerawat.",
+      "benefits": ["Eksfoliasi pori-pori", "Mengatasi jerawat", "Mengurangi komedo (blackheads/whiteheads)", "Mengontrol minyak berlebih"],
+      "risk_rating": 3,
+      "risk_category": "Low-Moderate Hazard",
+      "safety_details": "Umumnya aman untuk penggunaan kosmetik hingga konsentrasi 2%. Dapat menyebabkan kekeringan ringan. Batasi penggunaan jika memiliki alergi terhadap aspirin.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Avoid",
+        "sensitive": "Caution",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Retinol": "Avoid - Risiko iritasi dan pengikisan kulit yang parah jika ditumpuk langsung.",
+        "Glycolic Acid (AHA)": "Caution - Dapat digunakan bersama dalam produk kombinasi yang diformulasikan khusus dengan konsentrasi rendah, namun hindari menumpuk dua produk BHA dan AHA terpisah secara bersamaan.",
+        "Hyaluronic Acid": "Excellent - Menghidrasi kembali kulit setelah dieksfoliasi oleh BHA.",
+        "Centella Asiatica": "Excellent - Meredakan kemerahan dan menenangkan kulit yang sedang berjerawat atau setelah eksfoliasi."
+      },
+      "tips": "Gunakan 2-3 kali seminggu. Fokuskan pada area yang berminyak dan berjerawat (T-zone). Ikuti dengan moisturizer yang menghidrasi."
+    },
+    {
+      "name": "Niacinamide",
+      "aliases": ["Vitamin B3", "Nicotinamide"],
+      "description": "Vitamin larut air serbaguna yang bekerja memperkuat pelindung kulit (skin barrier), mengontrol produksi sebum, mencerahkan noda hitam, dan meredakan kemerahan akibat inflamasi.",
+      "benefits": ["Mencerahkan noda hitam", "Memperkuat skin barrier", "Mengontrol minyak", "Meredakan kemerahan", "Mengecilkan tampilan pori-pori"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Sangat aman dan ditoleransi dengan baik oleh hampir semua jenis kulit termasuk kulit sensitif.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Retinol": "Excellent - Mengurangi kemerahan dan kekeringan yang disebabkan oleh Retinol.",
+        "Zinc PCA": "Excellent - Kombinasi terbaik untuk mengontrol sebum dan mengatasi jerawat aktif tanpa membuat kulit kering.",
+        "Vitamin C (L-Ascorbic Acid)": "Caution - Pada formula tradisional, pencampuran langsung dapat menyebabkan kulit memerah (flushing) sementara, namun pada formulasi modern hal ini aman. Untuk hasil optimal, gunakan pada waktu terpisah atau tunggu meresap."
+      },
+      "tips": "Aman digunakan pagi dan malam hari. Konsentrasi optimal adalah 2% hingga 5% untuk pemula, sedangkan 10% untuk masalah kulit yang lebih membandel."
+    },
+    {
+      "name": "Hyaluronic Acid",
+      "aliases": ["Sodium Hyaluronate", "Hydrolyzed Hyaluronic Acid"],
+      "description": "Zat humektan alami yang mampu mengikat air hingga 1000 kali berat molekulnya sendiri, memberikan hidrasi mendalam ke dalam lapisan kulit dan membuat kulit tampak kenyal (plump).",
+      "benefits": ["Menghidrasi kulit", "Menjaga kekenyalan kulit", "Menghaluskan garis halus akibat dehidrasi", "Mempercepat penyembuhan luka"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Sangat aman dan tidak memicu iritasi. Cocok untuk semua jenis kulit termasuk kulit yang sedang iritasi.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Semua Bahan Aktif": "Excellent - Sangat baik dipadukan dengan bahan eksfoliasi (AHA/BHA) atau retinol untuk menjaga kelembapan kulit."
+      },
+      "tips": "Aplikasikan pada kulit yang masih setengah basah (damp skin) untuk mengunci kelembapan secara maksimal, lalu segera kunci dengan pelembap oklusif."
+    },
+    {
+      "name": "Centella Asiatica",
+      "aliases": ["Cica", "Gotu Kola", "Madecassoside"],
+      "description": "Ekstrak tanaman herbal tradisional yang kaya akan bahan aktif madecassoside dan asiaticoside. Sangat efektif untuk menenangkan peradangan, mempercepat penyembuhan luka, dan membangun kembali pertahanan kulit.",
+      "benefits": ["Menenangkan kemerahan", "Mempercepat penyembuhan jerawat", "Anti-inflamasi", "Memperbaiki skin barrier"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Sangat aman, hipoalergenik, dan ideal untuk merawat kulit yang mengalami iritasi, luka bakar ringan, atau eksim.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Salicylic Acid": "Excellent - Meredakan efek kering dan kemerahan akibat eksfoliasi pori-pori.",
+        "Retinol": "Excellent - Mengurangi iritasi kulit yang dipicu oleh regenerasi sel cepat."
+      },
+      "tips": "Sangat bagus digunakan dalam bentuk toner, serum, atau cream penenang ketika kulit sedang mengelupas atau breakout."
+    },
+    {
+      "name": "Vitamin C",
+      "aliases": ["L-Ascorbic Acid", "Ascorbyl Glucoside", "3-O-Ethyl Ascorbic Acid"],
+      "description": "Antioksidan kuat yang melawan radikal bebas akibat paparan sinar UV dan polusi, merangsang sintesis kolagen, serta menghambat produksi melanin untuk mencerahkan kulit.",
+      "benefits": ["Mencerahkan kulit", "Memudarkan bekas jerawat (PIH)", "Perlindungan antioksidan", "Merangsang kolagen"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Formula murni L-Ascorbic Acid memerlukan pH rendah (asam) yang bisa memicu sensasi perih pada kulit sensitif. Turunan Vitamin C (seperti Ethyl Ascorbic Acid) cenderung lebih stabil dan ramah kulit sensitif.",
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Good",
+        "sensitive": "Caution",
+        "acne_prone": "Caution"
+      },
+      "interactions": {
+        "Retinol": "Avoid - Gunakan Vitamin C di pagi hari dan Retinol di malam hari agar tidak terjadi iritasi berat.",
+        "Niacinamide": "Caution - Dapat mengurangi efektivitas masing-masing jika diaplikasikan bersamaan pada pH ekstrem. Berikan jeda 10-15 menit.",
+        "Sunscreen": "Excellent - Vitamin C bekerja sinergis dengan sunscreen untuk melipatgandakan perlindungan kulit terhadap radikal bebas sinar matahari."
+      },
+      "tips": "Simpan di tempat yang sejuk dan gelap karena mudah teroksidasi oleh cahaya dan udara (ditandai dengan perubahan warna menjadi kuning tua/cokelat). Gunakan di pagi hari sebelum sunscreen."
+    },
+    {
+      "name": "Ceramides",
+      "aliases": ["Ceramide NP", "Ceramide AP", "Ceramide EOP"],
+      "description": "Molekul lipid yang membentuk sekitar 50% dari lapisan pelindung kulit terluar (skin barrier). Bekerja seperti semen di antara sel-sel kulit untuk menjaga kelembapan dan melindungi kulit dari serangan eksternal.",
+      "benefits": ["Memulihkan skin barrier", "Mengunci kelembapan", "Mencegah dehidrasi", "Mengurangi sensitivitas kulit"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Sangat aman dan alami bagi kulit. Esensial bagi mereka yang memiliki masalah kulit kering kronis, eksim, atau skin barrier rusak.",
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Good"
+      },
+      "interactions": {
+        "Semua Bahan Aktif": "Excellent - Menjadi agen perbaikan utama setelah kulit terpapar bahan aktif keras."
+      },
+      "tips": "Pilihlah moisturizer yang mengandung perbandingan seimbang antara Ceramides, Cholesterol, dan Fatty Acids untuk hasil perbaikan skin barrier yang maksimal."
+    },
+    {
+      "name": "Benzoyl Peroxide",
+      "aliases": ["Dibenzoyl Peroxide"],
+      "description": "Bahan antibakteri kuat yang menghantarkan oksigen langsung ke dalam pori-pori untuk membunuh bakteri P. acnes penyebab jerawat, serta membantu mengeringkan jerawat aktif.",
+      "benefits": ["Membunuh bakteri jerawat", "Mengatasi jerawat meradang", "Mengurangi sumbatan pori-pori"],
+      "risk_rating": 3,
+      "risk_category": "Low-Moderate Hazard",
+      "safety_details": "Dapat menyebabkan kemerahan, kulit mengelupas, dan rasa kering. Dapat memutihkan pakaian/handuk yang terkena produk.",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Avoid",
+        "sensitive": "Avoid",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Retinol": "Avoid - Keduanya akan membatalkan khasiat satu sama lain dan menyebabkan iritasi parah.",
+        "Hyaluronic Acid / Ceramides": "Excellent - Mengurangi kekeringan hebat yang ditimbulkan oleh Benzoyl Peroxide."
+      },
+      "tips": "Gunakan sebagai spot treatment (hanya pada jerawat aktif) dengan konsentrasi rendah (2.5% sudah cukup efektif dan minim iritasi dibandingkan 5% atau 10%). Wajib gunakan pelembap."
+    },
+    {
+      "name": "Glycolic Acid",
+      "aliases": ["AHA", "Alpha Hydroxy Acid"],
+      "description": "Jenis AHA dengan ukuran molekul terkecil, memungkinkannya menembus kulit dengan cepat untuk mengangkat sel kulit mati di permukaan, mencerahkan kekusaman, dan menghaluskan tekstur kulit.",
+      "benefits": ["Eksfoliasi permukaan kulit", "Mencerahkan kulit kusam", "Memudarkan noda hitam", "Merangsang kolagen"],
+      "risk_rating": 3,
+      "risk_category": "Low-Moderate Hazard",
+      "safety_details": "Dapat memicu sensasi tingling (cekit-cekit) dan kemerahan. Meningkatkan sensitivitas kulit terhadap sinar matahari secara signifikan.",
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Good",
+        "sensitive": "Avoid",
+        "acne_prone": "Caution"
+      },
+      "interactions": {
+        "Retinol": "Avoid - Merusak skin barrier jika diaplikasikan bersamaan.",
+        "Salicylic Acid": "Caution - Hindari menumpuk langsung kecuali dalam formulasi gabungan yang lembut.",
+        "Panthenol / Hyaluronic Acid": "Excellent - Menghidrasi dan menenangkan kulit setelah eksfoliasi sel kulit mati."
+      },
+      "tips": "Gunakan hanya 1-2 kali seminggu pada malam hari. Wajib memakai sunscreen keesokan paginya tanpa toleransi."
+    },
+    {
+      "name": "Panthenol",
+      "aliases": ["Pro-Vitamin B5", "Pantothenic Acid"],
+      "description": "Bahan humektan sekaligus emolien yang menarik kelembapan ke dalam kulit dan menguncinya, meredakan iritasi, mengurangi gatal, dan mempercepat pemulihan jaringan kulit.",
+      "benefits": ["Sangat menghidrasi", "Meredakan iritasi & gatal", "Mempercepat penyembuhan luka", "Meredakan kemerahan"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Sangat aman, tidak beracun, dan memiliki toleransi yang luar biasa baik untuk kulit bayi hingga kulit sensitif dewasa.",
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Semua Bahan Aktif": "Excellent - Berperan sebagai penawar iritasi dari eksfolian keras."
+      },
+      "tips": "Ideal digunakan setelah prosedur medis kulit atau saat kulit mengalami kemerahan akibat terbakar matahari atau over-exfoliation."
+    },
+    {
+      "name": "Tea Tree Oil",
+      "aliases": ["Melaleuca Alternifolia Leaf Oil"],
+      "description": "Minyak esensial alami yang memiliki sifat antiseptik, anti-inflamasi, dan antimikroba alami untuk meredakan jerawat dan meredakan kemerahan di sekitarnya.",
+      "benefits": ["Anti-inflamasi", "Antimikroba alami", "Meredakan jerawat aktif", "Mengurangi komedo"],
+      "risk_rating": 1,
+      "risk_category": "Safe",
+      "safety_details": "Dalam bentuk murni (100% pure essential oil), dapat memicu iritasi dan dermatitis kontak. Harus diencerkan atau diformulasikan khusus dalam produk skincare dengan konsentrasi aman (0.5% - 5%).",
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Caution",
+        "sensitive": "Caution",
+        "acne_prone": "Excellent"
+      },
+      "interactions": {
+        "Salicylic Acid": "Caution - Penggunaan bersamaan dapat membuat area kulit tertentu menjadi sangat kering.",
+        "Centella Asiatica / Aloe Vera": "Excellent - Kombinasi seimbang untuk menenangkan kulit berjerawat tanpa iritasi."
+      },
+      "tips": "Gunakan produk berformula tea tree terencerkan untuk seluruh wajah, atau totolkan minyak yang sudah diencerkan (diluted) hanya pada jerawat."
+    },
+    {
+      "name": "Fragrance",
+      "aliases": ["Parfum", "Aroma"],
+      "description": "Zat pewangi tambahan yang digunakan untuk meningkatkan pengalaman sensorik produk skincare atau menutupi bau tidak sedap dari bahan baku kosmetik.",
+      "benefits": ["Memberikan aroma harum pada produk"],
+      "risk_rating": 8,
+      "risk_category": "Moderate-High Hazard",
+      "safety_details": "Fragrance merupakan salah satu penyebab utama dermatitis kontak alergi pada kulit sensitif. Mengandung senyawa volatil yang bisa memicu mikro-inflamasi jangka panjang di bawah permukaan kulit.",
+      "skin_suitability": {
+        "oily": "Caution",
+        "dry": "Caution",
+        "sensitive": "Avoid",
+        "acne_prone": "Caution"
+      },
+      "interactions": {},
+      "tips": "Bagi pemilik kulit sensitif, eksim, atau rosacea, sangat disarankan untuk mencari label produk yang bertuliskan 'Fragrance-Free' atau 'Tanpa Pewangi'."
+    }
+  ],
+  "products": [
+    {
+      "name": "Glow Facial Wash Cica + Panthenol",
+      "category": "Cleanser",
+      "brand": "GlowSkin Lab",
+      "description": "Pembersih wajah bertekstur gel dengan pH seimbang (5.5) yang membersihkan kotoran secara lembut tanpa merusak skin barrier.",
+      "key_ingredients": ["Centella Asiatica", "Panthenol", "Glycerin"],
+      "full_ingredients": ["Water", "Glycerin", "Sodium Cocoyl Isethionate", "Centella Asiatica Extract", "Panthenol", "Phenoxyethanol", "Allantoin"],
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      }
+    },
+    {
+      "name": "Acne Clearing Liquid BHA 2%",
+      "category": "Toner",
+      "brand": "GlowSkin Lab",
+      "description": "Exfoliating toner cair yang dirancang khusus untuk menembus pori-pori, membersihkan sebum berlebih, dan mencegah jerawat.",
+      "key_ingredients": ["Salicylic Acid", "Green Tea Extract"],
+      "full_ingredients": ["Water", "Methylpropanediol", "Salicylic Acid", "Butylene Glycol", "Camellia Sinensis (Green Tea) Leaf Extract", "Allantoin", "Sodium Hydroxide"],
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Avoid",
+        "sensitive": "Caution",
+        "acne_prone": "Excellent"
+      }
+    },
+    {
+      "name": "Hydrating Water Drop Essence",
+      "category": "Toner",
+      "brand": "GlowSkin Lab",
+      "description": "Toner hidrasi intensif yang mengembalikan kelembapan kulit secara langsung setelah proses pembersihan.",
+      "key_ingredients": ["Hyaluronic Acid", "Panthenol"],
+      "full_ingredients": ["Water", "Glycerin", "Propanediol", "Sodium Hyaluronate", "Panthenol", "1,2-Hexanediol", "Ethylhexylglycerin"],
+      "skin_suitability": {
+        "oily": "Excellent",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      }
+    },
+    {
+      "name": "Barrier Recovery Cream 3:1:1",
+      "category": "Moisturizer",
+      "brand": "GlowSkin Lab",
+      "description": "Pelembap restoratif dengan formulasi rasio emas Ceramides, Cholesterol, dan Asam Lemak untuk memperbaiki skin barrier rusak.",
+      "key_ingredients": ["Ceramides", "Squalane", "Glycerin"],
+      "full_ingredients": ["Water", "Squalane", "Glycerin", "Caprylic/Capric Triglyceride", "Ceramide NP", "Cholesterol", "Phytosphingosine", "Hydrogenated Lecithin"],
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Excellent",
+        "sensitive": "Excellent",
+        "acne_prone": "Good"
+      }
+    },
+    {
+      "name": "Ultra Shield Physical Sunscreen SPF 50",
+      "category": "Sunscreen",
+      "brand": "GlowSkin Lab",
+      "description": "Sunscreen fisik 100% yang memberikan perlindungan spektrum luas terhadap UVA dan UVB tanpa memicu alergi kulit.",
+      "key_ingredients": ["Zinc Oxide", "Titanium Dioxide", "Centella Asiatica"],
+      "full_ingredients": ["Zinc Oxide", "Titanium Dioxide", "Water", "Coco-Caprylate", "Centella Asiatica Extract", "Silica", "Alumina", "Tocopherol"],
+      "skin_suitability": {
+        "oily": "Good",
+        "dry": "Good",
+        "sensitive": "Excellent",
+        "acne_prone": "Excellent"
+      }
+    }
+  ],
+  "skin_type_tips": {
+    "oily": [
+      "Lakukan double cleansing di malam hari untuk memastikan sisa makeup dan sebum berlebih terangkat maksimal.",
+      "Pilihlah pelembap bertekstur gel ringan (water-based) agar tidak menyumbat pori-pori.",
+      "Bahan aktif utama yang direkomendasikan: Salicylic Acid (BHA) untuk eksfoliasi pori, dan Niacinamide + Zinc PCA untuk mengontrol sebum."
+    ],
+    "dry": [
+      "Hindari pembersih wajah yang menghasilkan busa berlebih (foaming cleanser) karena cenderung mengandung sulfat keras yang mengikis minyak alami.",
+      "Gunakan teknik layering hidrasi dengan toner hidrasi diikuti serum hyaluronic acid di atas kulit lembap.",
+      "Kunci kelembapan dengan moisturizer bertekstur cream yang kaya akan Ceramides, Squalane, atau Shea Butter."
+    ],
+    "sensitive": [
+      "Selalu lakukan patch test di belakang telinga atau lengan bagian dalam selama 24 jam sebelum menggunakan produk baru.",
+      "Hindari produk yang mengandung Fragrance/Parfum, Alcohol Denat, dan minyak esensial konsentrasi tinggi.",
+      "Gunakan bahan-bahan penenang kulit seperti Centella Asiatica, Panthenol, Allantoin, dan Ceramides."
+    ],
+    "acne_prone": [
+      "Jangan memencet jerawat aktif karena dapat menyebarkan bakteri di bawah kulit dan meninggalkan bekas jerawat (PIH/PIE) permanen.",
+      "Gunakan spot treatment mengandung Benzoyl Peroxide atau Tea Tree Oil tepat di atas jerawat meradang.",
+      "Lakukan eksfoliasi secara rutin tetapi lembut menggunakan Salicylic Acid (BHA) 2-3 kali seminggu untuk mencegah penumpukan sebum di dalam pori-pori."
+    ]
+  }
+}
