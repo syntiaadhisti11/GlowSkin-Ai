@@ -37,7 +37,7 @@
 
 **Frontend** — React · TypeScript · Vite
 
-**AI Model** — `qwen2.5vl:7b` via Ollama (berjalan secara lokal, privasi terjaga)
+**AI Model** — `qwen2.5vl:3b` via Ollama (berjalan secara lokal, privasi terjaga)
 
 ---
 
